@@ -1,0 +1,246 @@
+{
+  "version": 1,
+  "description": "Scripted FoodMania Agent intents, natural-language answers, and useful next-step links.",
+  "questions": [
+    {
+      "id": "hello",
+      "keywords": [
+        "hi",
+        "hello",
+        "hey",
+        "salam",
+        "assalamualaikum",
+        "good morning",
+        "good evening"
+      ],
+      "answer": "Hey! 👋 Welcome to FoodMania. I can help you find something tasty, spot a deal, or get your order started. What are you in the mood for?",
+      "link": "menu.html",
+      "linkLabel": "Explore the menu"
+    },
+    {
+      "id": "deals",
+      "keywords": [
+        "deal",
+        "deals",
+        "offer",
+        "offers",
+        "discount",
+        "discounts",
+        "combo",
+        "combos",
+        "saving",
+        "save money",
+        "special offer",
+        "any deals",
+        "good deals",
+        "today deal",
+        "today deals",
+        "deals section",
+        "combo deal",
+        "meal deal"
+      ],
+      "answer": "Absolutely — everyone loves a good deal. Have a look at the current combos and offers on our homepage, and see what catches your eye.",
+      "link": "index.html#deals",
+      "linkLabel": "See current deals"
+    },
+    {
+      "id": "recommendation",
+      "type": "recommendation",
+      "keywords": [
+        "recommend",
+        "recommendation",
+        "suggest",
+        "suggestion",
+        "what should i eat",
+        "what to eat",
+        "im hungry",
+        "i am hungry",
+        "hungry",
+        "pick for me",
+        "surprise me",
+        "customer favourite",
+        "popular",
+        "best seller",
+        "bestseller",
+        "best food",
+        "something tasty",
+        "what is good",
+        "recommendations",
+        "recommend me",
+        "recommend something",
+        "give me a recommendation",
+        "any recommendations",
+        "suggest me something",
+        "what do you recommend",
+        "choose for me",
+        "pick something for me",
+        "surprise me with food",
+        "something to eat",
+        "food suggestion"
+      ],
+      "answer": "Let me find you something tasty!",
+      "link": "menu.html",
+      "linkLabel": "Browse the menu"
+    },
+    {
+      "id": "menu",
+      "keywords": [
+        "menu",
+        "food list",
+        "what do you sell",
+        "what can i get",
+        "show me food",
+        "all items",
+        "browse food",
+        "full menu"
+      ],
+      "answer": "Of course! You can browse the full menu by category, check the descriptions and prices, and choose whatever looks good to you.",
+      "link": "menu.html",
+      "linkLabel": "Browse the full menu"
+    },
+    {
+      "id": "burger",
+      "keywords": [
+        "burger",
+        "burgers",
+        "beef burger",
+        "chicken burger",
+        "smash burger"
+      ],
+      "answer": "In the mood for a burger? I like that choice. Head to the burger section to compare the options and find your kind of bite.",
+      "link": "menu.html#burgers",
+      "linkLabel": "Explore burgers"
+    },
+    {
+      "id": "pizza",
+      "keywords": [
+        "pizza",
+        "pizzas",
+        "cheesy pizza",
+        "pizza options"
+      ],
+      "answer": "Pizza sounds like a plan. Take a look at the pizza section to see what's available and choose your favourite.",
+      "link": "menu.html#pizza",
+      "linkLabel": "Explore pizza"
+    },
+    {
+      "id": "vegetarian",
+      "keywords": [
+        "vegetarian",
+        "veggie",
+        "vegetarian food",
+        "no meat",
+        "meatless"
+      ],
+      "answer": "I can help you look through the menu, but please check each item's ingredients before ordering if you avoid meat. The full menu is the best place to start.",
+      "link": "menu.html",
+      "linkLabel": "Check the menu"
+    },
+    {
+      "id": "prices",
+      "keywords": [
+        "price",
+        "prices",
+        "how much",
+        "cost",
+        "expensive",
+        "cheap",
+        "budget",
+        "under 500",
+        "under 1000"
+      ],
+      "answer": "You can check the listed prices on each menu card. Have a browse and compare a few options to find something that fits your budget.",
+      "link": "menu.html",
+      "linkLabel": "View items and prices"
+    },
+    {
+      "id": "ordering",
+      "keywords": [
+        "order",
+        "ordering",
+        "place an order",
+        "how do i order",
+        "buy",
+        "checkout",
+        "cart",
+        "add to cart",
+        "purchase"
+      ],
+      "answer": "Easy! Add anything you like to your cart, review your choices, then use the Order on WhatsApp button to send your order to the FoodMania team.",
+      "link": "menu.html",
+      "linkLabel": "Start choosing your food"
+    },
+    {
+      "id": "delivery",
+      "keywords": [
+        "delivery",
+        "deliver",
+        "deliver to me",
+        "delivery area",
+        "delivery fee",
+        "shipping",
+        "how long delivery",
+        "where do you deliver"
+      ],
+      "answer": "We're based in Karachi. Delivery areas, timing and any delivery fee should be confirmed with the team before you place the order, so you have the right details.",
+      "link": "index.html#contact",
+      "linkLabel": "Find our contact details"
+    },
+    {
+      "id": "contact",
+      "keywords": [
+        "contact",
+        "contact you",
+        "support",
+        "human",
+        "real person",
+        "talk to someone",
+        "whatsapp",
+        "phone number",
+        "complaint",
+        "help with order"
+      ],
+      "answer": "Of course — for a specific order or anything that needs a real person, the FoodMania team is the right place to go. You can find the contact option at the bottom of our homepage.",
+      "link": "index.html#contact",
+      "linkLabel": "Contact FoodMania"
+    },
+    {
+      "id": "ingredients",
+      "keywords": [
+        "ingredients",
+        "allergy",
+        "allergies",
+        "allergen",
+        "gluten",
+        "dairy",
+        "nuts",
+        "halal",
+        "dietary"
+      ],
+      "answer": "Thanks for checking first. The menu descriptions may not cover every ingredient or allergen, so please confirm any dietary requirements directly with the FoodMania team before ordering.",
+      "link": "index.html#contact",
+      "linkLabel": "Ask the FoodMania team"
+    },
+    {
+      "id": "not-sure",
+      "keywords": [
+        "help",
+        "suggestions",
+        "what can you do",
+        "what do you do",
+        "other stuff",
+        "anything else"
+      ],
+      "answer": "Happy to help! I can point you toward menu items, deals, prices and ordering. If you're not sure what you want, let me pick a menu item for you.",
+      "link": "menu.html",
+      "linkLabel": "Explore the menu"
+    },
+    {
+      "id": "fallback",
+      "keywords": [],
+      "answer": "I might not have that one figured out just yet, but I can still help you explore the menu, find deals, or get in touch with the team. Let's find you something good.",
+      "link": "menu.html",
+      "linkLabel": "Explore the menu"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse the full FoodMania menu: burgers, sandwiches, pizza, sides, pasta bowls, dips, drinks, desserts and combo deals.">
+  <title>Menu | FoodMania</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#141411">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Menu | FoodMania">
+  <meta property="og:description" content="Browse the full FoodMania menu: burgers, sandwiches, pizza, sides, pasta bowls, dips, drinks, desserts and combo deals.">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Restaurant","name":"FoodMania","servesCuisine":["Burgers","Pizza","Pasta","Desserts"],"telephone":"+923152136621","address":{"@type":"PostalAddress","addressLocality":"Karachi","addressCountry":"PK"},"areaServed":"Karachi"}</script>
+
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script defer src="js/navigation.js"></script>
+  <script defer src="js/products.js"></script>
+  <script defer src="js/app.js"></script>
+  <script defer src="js/menu.js"></script>
+</head>
+<body class="menu-page">
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="FoodMania home"><span class="brand-mark"><i class="fa-solid fa-utensils"></i></span><span>Food<span>Mania</span></span></a>
+    <nav class="site-nav" id="siteNavigation" aria-label="Main">
+      <a href="menu.html" aria-current="page">Menu</a><a href="index.html#deals">Deals</a><a href="index.html#faq">FAQ</a><a href="index.html#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a class="header-whatsapp" data-whatsapp-link href="https://wa.me/923152136621" aria-label="Chat with us on WhatsApp"><i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span></a>
+      <button class="cart-button" id="openCart" aria-label="Open cart"><i class="fa-solid fa-bag-shopping"></i><span class="cart-count" id="cartCount">0</span></button>
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-controls="siteNavigation" aria-expanded="false"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
+    </div>
+  </header>
+  <main>
+    <section class="menu-intro dark-section"><div class="section-shell menu-intro-inner"><p class="eyebrow"><span class="eyebrow-line"></span> THE GOOD STUFF</p><h1>Find your next <em>favourite.</em></h1><p>From stacked burgers to the last little dip. Take your time.</p><div class="menu-search"><i class="fa-solid fa-magnifying-glass"></i><input id="menuSearch" type="search" placeholder="Search dishes, ingredients..." aria-label="Search menu"><i class="fa-solid fa-arrow-turn-down menu-search-enter" aria-hidden="true"></i></div><div class="menu-filters" id="menuFilters" role="group" aria-label="Filter the menu"><button type="button" class="filter-chip" data-filter="veg" aria-pressed="false"><span class="diet diet-veg" aria-hidden="true"></span> Vegetarian</button><button type="button" class="filter-chip" data-filter="spicy" aria-pressed="false"><i class="fa-solid fa-pepper-hot" aria-hidden="true"></i> Spicy</button><button type="button" class="filter-chip" data-filter="budget" aria-pressed="false">Under Rs. 700</button></div></div></section>
+    <nav class="category-nav" aria-label="Menu categories"><div class="category-nav-inner" id="categoryNav"></div></nav>
+    <div class="menu-content section-shell" id="menuContent"></div>
+    <section class="menu-bottom-cta section-shell"><div><h2>Have a question before <em>you order?</em></h2></div><a class="button button-primary" data-whatsapp-link href="https://wa.me/923152136621"><i class="fa-brands fa-whatsapp"></i> Chat with us on WhatsApp</a></section>
+  </main>
+  <footer class="site-footer" id="contact">
+    <div class="footer-main section-shell">
+      <div><a class="brand brand-light" href="index.html"><span class="brand-mark"><i class="fa-solid fa-utensils"></i></span><span>Food<span>Mania</span></span></a><p data-site="business.tagline">Good food. Good mood.</p><div class="footer-social" id="footerSocial" hidden></div></div>
+      <div><h4>Explore</h4><a href="menu.html">Full menu</a><a href="menu.html#burgers">Burgers</a><a href="menu.html#pizza">Pizza</a><a href="index.html#deals">Deals</a><a href="index.html#faq">FAQ</a></div>
+      <div><h4>Contact</h4><a data-whatsapp-link href="https://wa.me/923152136621">Chat on WhatsApp <i class="fa-brands fa-whatsapp"></i></a><a data-tel-link href="tel:+923152136621" data-site="business.phoneDisplay">+92 315 2136621</a><p data-site="hours.summary">Daily, 12 PM – 1 AM</p></div>
+      <div><h4>We deliver to</h4><p data-site="delivery.areas">DHA, Clifton, Gulshan-e-Iqbal, PECHS, North Nazimabad</p><p data-site="business.city">Karachi, Pakistan</p></div>
+    </div>
+    <div class="footer-bottom section-shell"><span>© 2026 FoodMania. All rights reserved.</span><span><a href="privacy.html">Privacy policy</a> · Prices in PKR.</span></div>
+  </footer>
+  <section class="product-modal" id="productDetailsModal" aria-hidden="true" aria-label="Product details">
+    <button class="product-modal-backdrop" type="button" data-close-product-modal aria-label="Close product details"></button>
+    <article class="product-modal-panel" role="dialog" aria-modal="true" aria-labelledby="productModalTitle">
+      <button class="product-modal-close" type="button" data-close-product-modal aria-label="Close details"><i class="fa-solid fa-xmark"></i></button>
+      <div class="product-modal-art" id="productModalArt"></div>
+      <div class="product-modal-copy"><p class="product-category" id="productModalCategory"></p><h2 id="productModalTitle"></h2><p class="product-modal-description" id="productModalDescription"></p><div class="product-modal-price" id="productModalPrice"></div><button class="button button-primary product-modal-add" id="productModalAdd" type="button">Add to cart <i class="fa-solid fa-plus"></i></button>
+        <div class="pairing" id="productModalPairing" hidden><h3>Goes well with</h3><div class="pairing-list" id="productModalPairs"></div></div>
+      </div>
+    </article>
+  </section>
+  <button class="mascot-widget" type="button" aria-label="Open FoodMania Agent" title="Open FoodMania Agent"><img src="assets/images/foodManiaMascot.webp" alt="FoodMania burger mascot"></button>
+  <div class="cart-overlay" id="cartOverlay" hidden><button class="cart-backdrop" id="closeCartBackdrop" aria-label="Close cart"></button><aside class="cart-drawer" aria-label="Shopping cart"><div class="drawer-heading"><div><p class="eyebrow">YOUR ORDER</p><h2>Your <em>cart.</em></h2></div><button id="closeCart" class="icon-button" aria-label="Close cart"><i class="fa-solid fa-xmark"></i></button></div><div id="cartItems" class="cart-items"></div><div class="cart-summary" id="cartSummary"></div></aside></div>
+
+  <section class="agent-overlay" id="foodManiaAgent" aria-hidden="true" aria-label="FoodMania Agent chat">
+    <div class="agent-shell" role="dialog" aria-modal="true" aria-labelledby="agentTitle">
+      <header class="agent-header">
+        <div class="agent-identity"><img src="assets/images/foodManiaMascot.webp" alt="" class="agent-avatar"><div class="agent-title-wrap"><h2 id="agentTitle">FOODMANIA AGENT</h2><span><i class="agent-status-dot"></i> HERE TO HELP</span></div></div>
+        <button class="agent-close" type="button" id="closeFoodManiaAgent" aria-label="Close FoodMania Agent"><i class="fa-solid fa-xmark"></i></button>
+      </header>
+      <div class="agent-conversation" id="agentConversation" aria-live="polite">
+        <div class="agent-welcome"><span class="agent-welcome-kicker">YOUR FOOD GUIDE</span><h3>Hey there. <em>Hungry?</em></h3><p>I'm your FoodMania guide. Tell me what you're craving, ask about a deal, or let me help you figure out what to order.</p><div class="agent-suggestions"><button type="button" data-agent-question="I'm hungry. What would you recommend?">Help me choose something <i class="fa-solid fa-arrow-up-right-from-square"></i></button><button type="button" data-agent-question="Got any good deals?">Show me the good deals <i class="fa-solid fa-arrow-up-right-from-square"></i></button><button type="button" data-agent-question="What's a customer favourite?">What's a customer favourite? <i class="fa-solid fa-arrow-up-right-from-square"></i></button><button type="button" data-agent-question="How do I place an order?">How do I order? <i class="fa-solid fa-arrow-up-right-from-square"></i></button></div></div>
+      </div>
+      <form class="agent-composer" id="agentComposer"><label class="agent-input-wrap"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i><input id="agentInput" type="search" autocomplete="off" placeholder="Ask FoodMania anything..." aria-label="Ask FoodMania Agent" maxlength="240"><button class="agent-send" type="submit" aria-label="Send message"><i class="fa-solid fa-arrow-up"></i></button></label></form>
+    </div>
+  </section>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

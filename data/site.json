@@ -1,0 +1,34 @@
+{
+  "business": {
+    "name": "FoodMania",
+    "tagline": "Good food. Good mood.",
+    "city": "Karachi, Pakistan",
+    "whatsapp": "923152136621",
+    "phoneDisplay": "+92 315 2136621"
+  },
+  "hours": {
+    "summary": "Daily, 12 PM – 1 AM"
+  },
+  "delivery": {
+    "fee": 150,
+    "freeOver": 2000,
+    "minOrder": 500,
+    "time": "35–45 min",
+    "areas": [
+      "DHA",
+      "Clifton",
+      "Gulshan-e-Iqbal",
+      "PECHS",
+      "North Nazimabad"
+    ]
+  },
+  "payments": {
+    "cod": "Cash on delivery",
+    "transfer": "Bank transfer / EasyPaisa / JazzCash"
+  },
+  "social": {
+    "instagram": "",
+    "facebook": "",
+    "tiktok": ""
+  }
+}
